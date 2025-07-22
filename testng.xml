@@ -3,7 +3,8 @@
 <suite name="All Test Suite">
     <test name="Test">
         <classes>
-            <class name="TesCases.RegisterTest"/>
+            <class name="TestCases.RegisterTest"/>
+            <class name="TestCases.LoginTest"/>
                 </classes>
     </test>
 </suite>

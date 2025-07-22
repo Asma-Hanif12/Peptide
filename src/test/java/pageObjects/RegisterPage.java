@@ -30,7 +30,7 @@ public class RegisterPage extends BasePage {
     private final By weightInput = By.xpath("//input[@placeholder='Enter your weight']");
     private final By option1slider = By.cssSelector("div.cursor-pointer.border-2");
     private final By SubscribeButton = By.xpath("//button[normalize-space()='Subscribe']");
-
+    private final By Logo = By.xpath("//img[contains(@alt,'Logo')]");
     private final Random random = new Random();
 
     private String getRandomString(int length) {
@@ -57,7 +57,7 @@ public class RegisterPage extends BasePage {
     }
 
 
-    public void navigateToSignupPage() {
+    public void navigateToMainPage() {
         driver.get("https://thirsty-leakey.138-197-14-51.plesk.page/");
     }
 
@@ -174,9 +174,8 @@ public class RegisterPage extends BasePage {
 
         driver.findElement(continuebutton1).click();
 
-
+        driver.findElement(Logo).click();
     }
-
 
 
 }

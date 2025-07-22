@@ -1,4 +1,4 @@
-package TesCases;
+package TestCases;
 
 
 import org.testng.annotations.Test;
@@ -8,7 +8,7 @@ public class RegisterTest extends BaseTest {
     @Test(priority = 1)
     public void testRegister() throws InterruptedException {
         registerPage = new RegisterPage();
-        registerPage.navigateToSignupPage();
+        registerPage.navigateToMainPage();
         registerPage.acceptTermsAndContinue();
         registerPage.reg();
         registerPage.clickRandomOption();
