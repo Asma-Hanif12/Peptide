@@ -64,6 +64,8 @@ public class RegisterPage extends BasePage {
     public void acceptTermsAndContinue() {
         driver.findElement(checkbox).click();
         driver.findElement(continueButton).click();
+    }
+    public void clicksignup() {
         driver.findElement(Menu).click();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         wait.until(ExpectedConditions.elementToBeClickable(Signup));
@@ -175,6 +177,7 @@ public class RegisterPage extends BasePage {
         driver.findElement(continuebutton1).click();
 
         driver.findElement(Logo).click();
+
     }
 
 }

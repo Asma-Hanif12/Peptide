@@ -3,10 +3,7 @@ package TestCases;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
-import pageObjects.BasePage;
-import pageObjects.ExplorePage;
-import pageObjects.LoginPage;
-import pageObjects.RegisterPage;
+import pageObjects.*;
 
 public class BaseTest {
 protected RegisterPage registerPage;
@@ -18,7 +15,7 @@ protected RegisterPage registerPage;
         registerPage = new RegisterPage();
         loginPage = new LoginPage();
         explorePage = new ExplorePage();
-
+        peptidesPage = new PeptidesPage();
 
 
     }

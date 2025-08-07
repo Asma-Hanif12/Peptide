@@ -50,6 +50,12 @@ public class LoginPage extends BasePage {
 
     public void clickLoginButton(){
        driver.findElement(LoginButton).click();
+        Thread.sleep(2000);
+
+    }
+   public void clicksubscribefree() throws InterruptedException {
+        driver.findElement(SubscribeButton).click();
+        Thread.sleep(2000);
     }
 
    public void ClickExplore2() throws InterruptedException {
