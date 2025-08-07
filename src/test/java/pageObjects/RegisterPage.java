@@ -14,7 +14,7 @@ import java.util.Random;
 public class RegisterPage extends BasePage {
     private final By checkbox = By.xpath("//span[@class='checkbox__indicator']");
     private final By continueButton = By.xpath("//button[@id='onContinue']");
-    private final By Menu = By.xpath("//img[contains(@alt,'Menu')]");
+    private final By Menu = By.xpath("//img[@alt='Menu']");
     private final By Signup = By.xpath("//button[normalize-space()='Signup']");
     private final By fullname = By.xpath("//input[@placeholder='Enter your full name']");
     private final By email = By.xpath("//input[contains(@placeholder,'Enter your email address')]");
@@ -58,7 +58,7 @@ public class RegisterPage extends BasePage {
 
 
     public void navigateToMainPage() {
-        driver.get("https://thirsty-leakey.138-197-14-51.plesk.page/");
+        driver.get("https://peptide-md.vercel.app/");
     }
 
     public void acceptTermsAndContinue() {
@@ -96,7 +96,7 @@ public class RegisterPage extends BasePage {
             WebElement inputField = otpFields.get(i);
             inputField.click();
             inputField.sendKeys(Character.toString(otp.charAt(i)));
-            Thread.sleep(200);
+            Thread.sleep(300);
         }
         driver.findElement(verify).click();
 
@@ -177,6 +177,6 @@ public class RegisterPage extends BasePage {
         driver.findElement(Logo).click();
     }
 
-
 }
+
 

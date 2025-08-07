@@ -9,15 +9,19 @@ import java.time.Duration;
 public class LoginPage extends BasePage {
     private final By checkbox = By.xpath("//span[@class='checkbox__indicator']");
     private final By continueButton = By.xpath("//button[@id='onContinue']");
-    private final By Menu = By.xpath("//img[contains(@alt,'Menu')]");
+    private final By Menu = By.xpath("//button[@class='focus:outline-none flex items-center']");
     private final By Login = By.xpath("//button[normalize-space()='Log In']");
     private final By EnterEmail = By.xpath("//input[@placeholder='Enter your email address']");
     private final By EnterPassword = By.xpath("//input[@placeholder='Enter your password']");
-   private final By LoginButton = By.xpath("//button[normalize-space()='Log in']");
-   private final By exploreforfree = By.xpath("//span[normalize-space()='Explore for Free']");
+    private final By LoginButton = By.xpath("//button[normalize-space()='Log in']");
+    private final By Explore2 = By.cssSelector(".flex.items-center.space-x-1.cursor-pointer.group");
+    private final By Dashboard = By.xpath("//span[normalize-space()='Dashboard']");
+    private final By peptides = By.xpath("//span[normalize-space()='Peptides']");
+    private final By ChatPepi = By.xpath("//span[normalize-space()='Chat with Pepi']");
+    private final By Dosage = By.xpath("//span[normalize-space()='Dosage']");
 
    public void navigateToMainPage() {
-        driver.get("https://thirsty-leakey.138-197-14-51.plesk.page/");
+        driver.get("https://peptide-md.vercel.app/");
     }
     public void acceptTermsAndContinue() {
         driver.findElement(checkbox).click();
@@ -25,6 +29,9 @@ public class LoginPage extends BasePage {
     }
 
     public void login() throws InterruptedException {
+
+       Thread.sleep(2000);
+
         driver.findElement(Menu).click();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         wait.until(ExpectedConditions.elementToBeClickable(Login));
@@ -44,8 +51,25 @@ public class LoginPage extends BasePage {
     public void clickLoginButton(){
        driver.findElement(LoginButton).click();
     }
-    public void setExploreforfree() throws InterruptedException {
-        Thread.sleep(6000);
-        driver.findElement(exploreforfree).click();
-    }
+
+   public void ClickExplore2() throws InterruptedException {
+       driver.findElement(Explore2).click();
+   }
+
+   public void ClickDashboard() throws InterruptedException {
+       driver.findElement(Dashboard).click();
+   }
+
+   public void ClickPeptides() throws InterruptedException {
+       driver.findElement(peptides).click();
+   }
+
+   public void ClickChatPepi() throws InterruptedException {
+       driver.findElement(ChatPepi).click();
+   }
+
+   public void clickDosage() throws InterruptedException {
+       driver.findElement(Dosage).click();
+   }
+
 }

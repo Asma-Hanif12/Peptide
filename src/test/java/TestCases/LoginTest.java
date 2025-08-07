@@ -11,9 +11,11 @@ public class LoginTest extends BaseTest {
 //        loginPage.navigateToMainPage();
 //        loginPage.acceptTermsAndContinue();
         loginPage.login();
-        loginPage.email("asmahanif@gmail.com");
-        loginPage.password("Test@123");
+        loginPage.email("testing12@gmail.com");
+        loginPage.password("Testing@123");
         loginPage.clickLoginButton();
-//        loginPage.setExploreforfree();
+//        loginPage.ClickDashboard();
+
+
     }
 }

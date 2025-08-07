@@ -22,8 +22,8 @@ protected RegisterPage registerPage;
 
 
     }
-    @AfterSuite
-    public void tearDownSuite() {
-        BasePage.quitDriver();
-}
+//    @AfterSuite
+//    public void tearDownSuite() {
+//        BasePage.quitDriver();
+//}
 }

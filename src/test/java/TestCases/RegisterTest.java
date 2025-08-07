@@ -9,7 +9,7 @@ public class RegisterTest extends BaseTest {
     public void testRegister() throws InterruptedException {
         registerPage = new RegisterPage();
         registerPage.navigateToMainPage();
-        registerPage.acceptTermsAndContinue();
+//        registerPage.acceptTermsAndContinue();
         registerPage.reg();
         registerPage.clickRandomOption();
         registerPage.setCheckboxes2sliders();
