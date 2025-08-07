@@ -14,11 +14,8 @@ public class LoginPage extends BasePage {
     private final By EnterEmail = By.xpath("//input[@placeholder='Enter your email address']");
     private final By EnterPassword = By.xpath("//input[@placeholder='Enter your password']");
     private final By LoginButton = By.xpath("//button[normalize-space()='Log in']");
-    private final By Explore2 = By.cssSelector(".flex.items-center.space-x-1.cursor-pointer.group");
-    private final By Dashboard = By.xpath("//span[normalize-space()='Dashboard']");
-    private final By peptides = By.xpath("//span[normalize-space()='Peptides']");
-    private final By ChatPepi = By.xpath("//span[normalize-space()='Chat with Pepi']");
-    private final By Dosage = By.xpath("//span[normalize-space()='Dosage']");
+    private final By SubscribeButton = By.xpath("//span[@class='cursor-pointer']");
+
 
    public void navigateToMainPage() {
         driver.get("https://peptide-md.vercel.app/");
@@ -48,7 +45,7 @@ public class LoginPage extends BasePage {
         driver.findElement(EnterPassword).sendKeys(password);
     }
 
-    public void clickLoginButton(){
+    public void clickLoginButton() throws InterruptedException {
        driver.findElement(LoginButton).click();
         Thread.sleep(2000);
 
@@ -58,24 +55,6 @@ public class LoginPage extends BasePage {
         Thread.sleep(2000);
     }
 
-   public void ClickExplore2() throws InterruptedException {
-       driver.findElement(Explore2).click();
-   }
 
-   public void ClickDashboard() throws InterruptedException {
-       driver.findElement(Dashboard).click();
-   }
-
-   public void ClickPeptides() throws InterruptedException {
-       driver.findElement(peptides).click();
-   }
-
-   public void ClickChatPepi() throws InterruptedException {
-       driver.findElement(ChatPepi).click();
-   }
-
-   public void clickDosage() throws InterruptedException {
-       driver.findElement(Dosage).click();
-   }
 
 }

@@ -9,6 +9,10 @@ public class BaseTest {
 protected RegisterPage registerPage;
     protected LoginPage loginPage;
     protected ExplorePage explorePage;
+    protected PeptidesPage peptidesPage;
+
+
+
     @BeforeSuite
     public void setUp() {
         BasePage.initializeDriver();

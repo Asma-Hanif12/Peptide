@@ -10,6 +10,7 @@ public class RegisterTest extends BaseTest {
         registerPage = new RegisterPage();
         registerPage.navigateToMainPage();
 //        registerPage.acceptTermsAndContinue();
+        registerPage.clicksignup();
         registerPage.reg();
         registerPage.clickRandomOption();
         registerPage.setCheckboxes2sliders();
