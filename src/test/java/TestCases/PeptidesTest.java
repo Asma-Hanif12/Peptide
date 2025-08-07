@@ -8,6 +8,12 @@ public class PeptidesTest extends BaseTest {
     public void testPeptides() throws InterruptedException {
         peptidesPage = new PeptidesPage();
         peptidesPage.ClickPeptides();
-        peptidesPage.ClickSearch();
+//        peptidesPage.ClickSearch();
+//        peptidesPage.SelectExperience();
+//        peptidesPage.SelectProfile();
+//        peptidesPage.NotFDA();
+        peptidesPage.Clickcompare();
+        peptidesPage.Selectcompare();
+        peptidesPage.backButton();
     }
 }

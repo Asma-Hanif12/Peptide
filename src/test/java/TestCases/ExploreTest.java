@@ -12,7 +12,7 @@ public class ExploreTest extends BaseTest {
         explorePage.DropDownPodcasts();
         explorePage.DropDownArticles();
         explorePage.DropDownCasestudies();
-//        explorePage.ClickDashboard();
+        explorePage.ClickDashboard();
 //        explorePage.ClickChatPepi();
 //        explorePage.ClickDosage();
     }
