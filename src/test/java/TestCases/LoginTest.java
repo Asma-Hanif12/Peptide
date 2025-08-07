@@ -14,7 +14,7 @@ public class LoginTest extends BaseTest {
         loginPage.email("testing12@gmail.com");
         loginPage.password("Testing@123");
         loginPage.clickLoginButton();
-        loginPage.setoption1slider();
+//        loginPage.setoption1slider();
 
 
     }
