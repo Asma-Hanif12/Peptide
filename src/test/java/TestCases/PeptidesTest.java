@@ -8,5 +8,6 @@ public class PeptidesTest extends BaseTest {
     public void testPeptides() throws InterruptedException {
         peptidesPage = new PeptidesPage();
         peptidesPage.ClickPeptides();
+        peptidesPage.ClickSearch();
     }
 }

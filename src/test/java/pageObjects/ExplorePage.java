@@ -22,6 +22,7 @@ public class ExplorePage extends BasePage {
         WebElement videos = driver.findElement(By.xpath("//span[normalize-space()='Videos']"));
         videos.click();
     }
+
     public void DropDownPodcasts() throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
         WebElement dropDown = wait.until(ExpectedConditions.visibilityOfElementLocated(ExploreDropDown));

@@ -31,6 +31,7 @@ public class RegisterPage extends BasePage {
     private final By option1slider = By.cssSelector("div.cursor-pointer.border-2");
     private final By SubscribeButton = By.xpath("//button[normalize-space()='Subscribe']");
     private final By Logo = By.xpath("//img[contains(@alt,'Logo')]");
+
     private final Random random = new Random();
 
     private String getRandomString(int length) {
