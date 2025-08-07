@@ -32,7 +32,7 @@ private final By search = By.xpath("//input[@placeholder='Search peptides']");
 
 public void ClickSearch() {
 //        driver.findElement(search).sendKeys(getRandomString(5));
-    driver.findElement(search).sendKeys("Mots-c");
+    driver.findElement(search).sendKeys("M");
 }
 
 }
