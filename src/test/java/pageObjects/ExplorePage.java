@@ -11,7 +11,6 @@ public class ExplorePage extends BasePage {
     private final By ExploreDropDown = By.cssSelector(".flex.items-center.space-x-1.cursor-pointer.group");
     private final By Dashboard = By.xpath("//span[normalize-space()='Dashboard']");
     private final By ChatPepi = By.xpath("//span[normalize-space()='Chat with Pepi']");
-    private final By Dosage = By.xpath("//span[normalize-space()='Dosage']");
 
 
     public void DropDownvideo() throws InterruptedException {
@@ -58,7 +57,5 @@ public class ExplorePage extends BasePage {
         driver.findElement(ChatPepi).click();
     }
 
-    public void ClickDosage() {
-        driver.findElement(Dosage).click();
-    }
+
 }

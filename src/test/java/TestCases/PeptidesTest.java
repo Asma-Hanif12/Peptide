@@ -16,4 +16,5 @@ public class PeptidesTest extends BaseTest {
         peptidesPage.Selectcompare();
         peptidesPage.backButton();
     }
+
 }

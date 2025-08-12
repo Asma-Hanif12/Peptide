@@ -18,7 +18,7 @@ public class PeptidesPage extends BasePage {
     private final By compare = By.xpath("//button[normalize-space()='Compare']");
     private final By selectcheckbox = By.xpath("(//input[contains(@type,'checkbox')])");
     private final By CompareButton = By.xpath("//button[normalize-space()='Compare (2 of 2)']");
-    private final By Back = By.xpath("//img[@alt='Back']");
+    private final By Back = By.xpath("//img[@alt='left-arrows']");
 
 
     private final Random random = new Random();

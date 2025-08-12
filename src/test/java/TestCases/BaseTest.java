@@ -10,7 +10,8 @@ protected RegisterPage registerPage;
     protected LoginPage loginPage;
     protected ExplorePage explorePage;
     protected PeptidesPage peptidesPage;
-
+    protected DosagePage dosagePage;
+    protected ForgetPassword forgetPassword;
 
 
     @BeforeSuite
@@ -20,7 +21,8 @@ protected RegisterPage registerPage;
         loginPage = new LoginPage();
         explorePage = new ExplorePage();
         peptidesPage = new PeptidesPage();
-
+        dosagePage = new DosagePage();
+        forgetPassword = new ForgetPassword();
 
     }
 //    @AfterSuite
