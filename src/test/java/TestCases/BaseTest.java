@@ -1,6 +1,5 @@
 package TestCases;
 
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
 import pageObjects.*;
@@ -12,7 +11,7 @@ protected RegisterPage registerPage;
     protected PeptidesPage peptidesPage;
     protected DosagePage dosagePage;
     protected ForgetPassword forgetPassword;
-
+    protected MenuListItems menuListItems;
 
     @BeforeSuite
     public void setUp() {
@@ -23,7 +22,7 @@ protected RegisterPage registerPage;
         peptidesPage = new PeptidesPage();
         dosagePage = new DosagePage();
         forgetPassword = new ForgetPassword();
-
+        menuListItems =new MenuListItems();
     }
 //    @AfterSuite
 //    public void tearDownSuite() {

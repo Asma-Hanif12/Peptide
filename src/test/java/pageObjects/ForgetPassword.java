@@ -16,9 +16,9 @@ public class ForgetPassword extends BasePage {
     private final By EnterEmail = By.xpath("//input[@placeholder='Enter your email address']");
     private final By continuebutton1 = By.xpath("//button[normalize-space()='Continue']");
     private final By verify = By.xpath("//button[normalize-space()='Verify']");
-    private final By password = By.xpath("//input[@placeholder='Enter your password']");
+    private final By password = By.xpath("//input[contains(@placeholder,'Enter your new password')]");
     private final By confirmPasswordField = By.xpath("//input[@placeholder='Re-enter your password']");
-    private final By submitButton = By.xpath("//button[normalize-space()='Agree and Sign up']");
+    private final By submitButton = By.xpath("//button[normalize-space()='Reset Password']");
 
     private final Random random = new Random();
 
@@ -76,11 +76,14 @@ public class ForgetPassword extends BasePage {
             Thread.sleep(300);
         }
         driver.findElement(verify).click();
+        Thread.sleep(5000);
+
 
     }
     public void setpassword() throws InterruptedException {
 
         String randomPassword = getRandomAlphaNumeric(10);
+        Thread.sleep(8000);
 
         driver.findElement(password).sendKeys(randomPassword);
         driver.findElement(confirmPasswordField).sendKeys(randomPassword);

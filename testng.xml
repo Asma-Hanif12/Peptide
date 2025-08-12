@@ -8,7 +8,8 @@
 <!--            <class name="TestCases.ExploreTest"/>-->
 <!--            <class name="TestCases.PeptidesTest"/>-->
 <!--            <class name="TestCases.DosageTest"/>-->
-            <class name="TestCases.ForgetPasswordTest"/>
+<!--            <class name="TestCases.ForgetPasswordTest"/>-->
+            <class name="TestCases.MenuListItemsTest"/>
 
                 </classes>
 
