@@ -24,7 +24,7 @@ public class LoginPage extends BasePage {
     private final Random random = new Random();
 
    public void navigateToMainPage() {
-        driver.get("https://peptide-md.vercel.app/");
+        driver.get("https://peptide-kappa.vercel.app/");
     }
     public void acceptTermsAndContinue() {
         driver.findElement(checkbox).click();

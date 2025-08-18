@@ -10,5 +10,9 @@ public class MenuListItemsTest extends BaseTest {
         menuListItems.navigateToMainPage();
         menuListItems.clickvideos();
         menuListItems.clickarticles();
+        menuListItems.clickDatabase();
+        menuListItems.clickPodcasts();
+        menuListItems.clickCaseStudies();
+
     }
 }

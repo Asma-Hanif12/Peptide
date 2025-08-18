@@ -4,12 +4,12 @@
     <test name="Test">
         <classes>
 <!--            <class name="TestCases.RegisterTest"/>-->
-<!--            <class name="TestCases.LoginTest"/>-->
+            <class name="TestCases.LoginTest"/>
 <!--            <class name="TestCases.ExploreTest"/>-->
 <!--            <class name="TestCases.PeptidesTest"/>-->
 <!--            <class name="TestCases.DosageTest"/>-->
 <!--            <class name="TestCases.ForgetPasswordTest"/>-->
-            <class name="TestCases.MenuListItemsTest"/>
+<!--            <class name="TestCases.MenuListItemsTest"/>-->
 
                 </classes>
 

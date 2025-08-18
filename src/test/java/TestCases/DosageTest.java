@@ -12,9 +12,13 @@ public class DosageTest extends BaseTest {
         dosagePage.ClickDosage();
         dosagePage.ClickADP();
         dosagePage.ClickDate();
+        dosagePage.clickenterpeptides();
         dosagePage.dosageno();
         dosagePage.Setgoal();
-//        dosagePage.SetAI();
+        dosagePage.clickadd();
+        dosagePage.SetAI();
+        dosagePage.ClickContinue();
+        dosagePage.clicksendbutton();
 
 
     }
