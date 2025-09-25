@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="Test">
+        <classes>
+<!--            <class name="TestCases.RegisterTest"/>-->
+            <class name="TestCases.LoginTest"/>
+<!--            <class name="TestCases.ExploreTest"/>-->
+<!--            <class name="TestCases.PeptidesTest"/>-->
+<!--            <class name="TestCases.DosageTest"/>-->
+<!--            <class name="TestCases.ForgetPasswordTest"/>-->
+<!--            <class name="TestCases.MenuListItemsTest"/>-->
+
+                </classes>
+
+    </test>
+</suite>
